@@ -6,7 +6,7 @@ body {
     padding:0;
     margin:0;
     display: flex;
-    width:100vw;
+    width:65vw;
     height: 10vh;
     background-color:rgb(46, 158, 196);
     text-align: center;
@@ -15,14 +15,17 @@ body {
   }
 
   #app{
+      display: grid;
+      position: fixed;
       width: 800px;
       max-width: 80%;
       background-color: burlywood;
       border-radius: 5px;
       padding: 10px;
       box-shadow: 0 0 10px 2px;
-      margin-top: 30vh;
-
+      margin-top: 30vh ;
+      margin-left: 15vw;
+     
   }
 
 
