@@ -65,6 +65,7 @@ function nextQuestion(questions) {
         epilogeas = questions[index].answers[3].correct
     })
 
+    //next button
     const epomeni = document.createElement('button')
     epomeni.innerHTML = "Επόμενη"
     epomeni.addEventListener('click', function () {
@@ -76,9 +77,9 @@ function nextQuestion(questions) {
         else nextQuestion(questions)
     })
     box.append(epomeni)
-
 }
 
+//emfanisi apotelesmatos
 function showScore(questions,swstes){
     box.innerHTML = ''
     let score = document.createElement('h2')
@@ -86,9 +87,6 @@ function showScore(questions,swstes){
     box.append(score)
     app.append(box)
 }
-
-
-
 
 fetch('questions.json')
     .then(res => res.json())
